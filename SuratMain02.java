@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SuratMain02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        StackSurat02 stackSurat = new StackSurat02(10); // Misalnya, kapasitas stack 10
+        StackSurat02 stackSurat = new StackSurat02(10); 
         int pilihan;
 
         do {
@@ -15,7 +15,7 @@ public class SuratMain02 {
             System.out.println("0. Keluar");
             System.out.print("Masukkan pilihan: ");
             pilihan = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (pilihan) {
                 case 1:
@@ -41,7 +41,7 @@ public class SuratMain02 {
                     PraktikumSurat02 suratDiproses = stackSurat.pop();
                     if (suratDiproses != null) {
                         System.out.println("Memproses surat izin dari: " + suratDiproses.namaMahasiswa);
-                        // Tambah logika pemrosesan surat jika perlu
+                        
                     }
                     break;
 

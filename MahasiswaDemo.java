@@ -28,7 +28,7 @@ public class MahasiswaDemo {
                     stack.push(mhs);
                     System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
                     break;
-                    case 2:
+                case 2:
                     Mahasiswa02 dinilai = stack.pop();
                     if (dinilai != null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
