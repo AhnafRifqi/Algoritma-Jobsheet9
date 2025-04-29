@@ -5,7 +5,7 @@ public class StackTugasMahasiswa02 {
 
     public StackTugasMahasiswa02(int size) {
         this.size = size;
-        stack = new Mahasiswa02[size];
+        stack = new Mahasiswa02[5];
         top = -1;
     }
 
@@ -65,6 +65,19 @@ public class StackTugasMahasiswa02 {
             biner += stack.pop();
         }
         return biner;
+    }
+
+    public Mahasiswa02 peekBottom() {
+        if (!isEmpty()) {
+            return stack[0]; 
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+            return null;
+        }
+    }
+
+    public int countTugas() {
+        return top + 1;
     }
     
 }
